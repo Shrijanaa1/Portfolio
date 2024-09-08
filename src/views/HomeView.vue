@@ -45,7 +45,7 @@
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #333;
   margin-bottom: 0;
   margin-top: 5px;
