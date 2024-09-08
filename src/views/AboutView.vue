@@ -39,6 +39,9 @@
         <a href="https://www.linkedin.com/in/shrijana-karki/" target="_blank" class="contact-link">
           <i class="pi pi-linkedin"></i> LinkedIn
         </a>
+        <a href="mailto:srznakrki111@gmail.com" target="_blank" class="contact-link">
+          <i class="pi pi-envelope"></i> Email
+        </a>
       </div>
     </section>
   </div>
