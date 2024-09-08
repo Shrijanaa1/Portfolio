@@ -22,7 +22,7 @@ const items = [
     <RouterView />
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>&copy; 2024 Shrijana Karki. All Rights Reserved.</p>
   </footer>
 </template>
@@ -31,6 +31,10 @@ const items = [
 
 .menubar {
   margin-bottom: 2rem;
+}
+
+.footer{
+  text-align: center;
 }
 
 </style>
