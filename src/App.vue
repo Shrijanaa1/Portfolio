@@ -2,6 +2,10 @@
 import { RouterLink, RouterView } from 'vue-router'
 import { useRouter } from 'vue-router';
 
+import 'primeicons/primeicons.css'
+
+
+
 const router = useRouter();
 
 const items = [

@@ -10,9 +10,11 @@
 
       <h1>Shrijana Karki</h1>
       <p>Java Developer | Computer Science Graduate</p>
+      <p class="description-text "> I am a passionate developer with experience in full-stack development,
+        specializing in Java and related technologies.</p>
 
       <RouterLink to="/about">
-        <Button label="Learn More About Me" class="p-button-raised p-button-success" />
+        <Button label="Learn More About Me" class="custom-button p-button-raised" />
       </RouterLink>
 
     </section>
@@ -46,11 +48,35 @@ h1 {
   font-size: 3.5rem;
   color: #333;
   margin-bottom: 0;
+  margin-top: 5px;
 }
 
 p {
   font-size: 1.5rem;
   margin: 20px 0;
   color: #666;
+}
+
+.custom-button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.custom-button:hover {
+  background-color: #2980b9;
+}
+
+.custom-button:focus {
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5);
+}
+.description-text {
+  font-size: 1.25rem;
+  color: #888;
+  margin-top: 0;
 }
 </style>

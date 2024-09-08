@@ -26,7 +26,4 @@ app.component('Button', Button)
 app.component('Tag', Tag)
 app.component('Card', Card)
 
-
-
-
 app.mount('#app')
