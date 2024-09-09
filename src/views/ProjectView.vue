@@ -55,7 +55,7 @@ const projects = [
 <style scoped>
 #my-projects {
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color: #f0f0f5;
 }
 
 h2.section-title {

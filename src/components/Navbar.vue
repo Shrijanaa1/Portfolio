@@ -9,7 +9,7 @@ const items = [
   { label: 'About', icon: 'pi pi-fw pi-info-circle', command: () => router.push('/about') },
   { label: 'Experience', icon: 'pi pi-fw pi-briefcase', command: () => router.push('/experience') },
   { label: 'Projects', icon: 'pi pi-fw pi-folder', command: () => router.push('/projects') },
-  { label: 'Contact', icon: 'pi pi-fw pi-contact', command: () => router.push('/contact') }
+  { label: 'Contact', icon: 'pi pi-fw pi-phone', command: () => router.push('/contact') }
 ];
 </script>
 

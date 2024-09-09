@@ -63,7 +63,7 @@ const experiences = [
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 .experience-card {
   background: #fff;

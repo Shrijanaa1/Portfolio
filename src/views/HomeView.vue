@@ -5,8 +5,9 @@
 
       <h1>Shrijana Karki</h1>
       <p>Java Developer | Computer Science UnderGraduate</p>
-      <p class="description-text "> I am a passionate developer with experience in full-stack development,
-        specializing in Java and related technologies.</p>
+      <p class="description-text ">
+        I am a passionate developer with experience in full-stack development, specializing in Java and related technologies.
+        I believe that every day is a new opportunity to learn and grow.</p>
 
       <RouterLink to="/about">
         <Button label="Learn More About Me" class="custom-button p-button-raised" />
