@@ -38,23 +38,7 @@
         </div>
       </div>
     </div>
-    <!-- Contact Section -->
-    <section class="contact">
-      <h2>
-        <i class="pi pi-envelope icon"></i> Contact
-      </h2>
-      <div class="contact-links">
-        <a href="https://github.com/Shrijanaa1" target="_blank" class="contact-link">
-          <i class="pi pi-github"></i> GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/shrijana-karki/" target="_blank" class="contact-link">
-          <i class="pi pi-linkedin"></i> LinkedIn
-        </a>
-        <a href="mailto:srznakrki111@gmail.com" target="_blank" class="contact-link">
-          <i class="pi pi-envelope"></i> Email
-        </a>
-      </div>
-    </section>
+
   </div>
 </template>
 

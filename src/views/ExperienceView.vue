@@ -57,6 +57,7 @@ const experiences = [
 .experience h2 {
   font-size: 2.2rem;
   //margin-bottom: 1rem;
+  text-align: center;
 }
 .experience-container {
   display: flex;

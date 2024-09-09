@@ -18,6 +18,7 @@
   <AboutView />
   <ExperienceView />
   <ProjectView />
+  <ContactView />
 </template>
 
 <script setup>
@@ -26,4 +27,5 @@ import '@/assets/styles/home.css';
 import AboutView from "@/views/AboutView.vue";
 import ExperienceView from "@/views/ExperienceView.vue";
 import ProjectView from "@/views/ProjectView.vue";
+import ContactView from "@/views/ContactView.vue";
 </script>
