@@ -19,5 +19,6 @@ const items = [
 <style scoped>
 .menubar {
   margin-bottom: 2rem;
+  font-size: 1rem;
 }
 </style>

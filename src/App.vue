@@ -5,19 +5,21 @@ import FooterView from "@/components/FooterView.vue";  // Import the Navbar comp
 </script>
 
 <template>
-  <header>
-    <Navbar />
-  </header>
+    <header>
+      <Navbar />
+    </header>
 
-  <main>
+  <main >
     <RouterView />
   </main>
 
   <footer>
     <FooterView />
   </footer>
+
 </template>
 
-<style scoped>
-</style>
 
+<style scoped>
+
+</style>

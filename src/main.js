@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+// import '@/assets/styles/main.css';
 
 import PrimeVue from 'primevue/config';
 import 'primeicons/primeicons.css';
@@ -8,6 +9,8 @@ import Menubar from 'primevue/menubar';
 import Button from 'primevue/button';
 import Tag from 'primevue/tag'
 import Card from 'primevue/card'
+
+
 
 // FontAwesome imports
 import '@fortawesome/fontawesome-free/css/all.css';

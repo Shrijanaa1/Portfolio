@@ -53,16 +53,16 @@ const experiences = [
   padding: 2rem;
   background: #f5f5f5;
   color: #333;
-  margin-bottom: 50px;
 }
 .experience h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  //margin-bottom: 1rem;
 }
 .experience-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-bottom: 80px;
 }
 .experience-card {
   background: #fff;

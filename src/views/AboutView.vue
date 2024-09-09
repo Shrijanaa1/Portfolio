@@ -10,8 +10,9 @@
         <div class="education-details">
           <div v-for="education in educations" :key="education.period">
             <h3>{{ education.degree }}</h3>
-            <p>{{ education.institution }}</p>
-            <p>{{ education.period }}</p>
+            <p>{{ education.institution }}
+              <span class="education-period">{{ education.period }}</span>
+            </p>
           </div>
         </div>
       </div>
@@ -59,6 +60,9 @@
 
 <script setup>
 
+// Import external CSS file
+import '@/assets/styles/about.css';
+
 const column1Skills = [
   { name: 'Java', icon: 'fab fa-java' },
   { name: 'Spring', icon: 'fas fa-leaf' },
@@ -82,8 +86,6 @@ const educations = [
     period: "2016 - 2018" }
 ];
 
-// Import external CSS file
-import '@/assets/styles/about.css';
 
 </script>
 

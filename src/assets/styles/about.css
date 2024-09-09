@@ -43,13 +43,16 @@
 }
 
 .education-details p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #7f8c8d;
+    display: flex;
+    justify-content: space-between;
 }
 
 .skills-wrapper {
     display: flex;
     justify-content: space-between;
+    /*gap: 1.5rem;*/
 }
 
 .skills-column {
@@ -66,9 +69,9 @@
 
 .skill-tag {
     margin-left: 10px;
-    font-size: 1rem;
-    background-color: #3498db;
-    color: white;
+    font-size: 1.2rem !important;
+    background-color: transparent !important;
+    color: #34495e !important;
 }
 
 .skill-icon {
@@ -93,7 +96,7 @@
 .contact-links {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 .contact-link {

@@ -1,5 +1,6 @@
 <script setup>
-
+// Import external CSS file
+import '@/assets/styles/footer.css';
 </script>
 
 <template>
@@ -10,8 +11,4 @@
 
 <style scoped>
 
-.footer{
-  text-align: center;
-  font-size: 0.8rem;
-}
 </style>
