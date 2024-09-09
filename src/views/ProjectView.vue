@@ -1,9 +1,47 @@
+<script setup>
+import petImg from '@/assets/pet.png';
+import saImg from '@/assets/sentiment.png';
+import customerReachImg from '@/assets/cms.jpeg';
+import hmsImg from '@/assets/hms.jpeg';
+
+const projects = [
+  {
+    id: 1,
+    name: 'Personal Expense Tracker',
+    description: 'Track your expenses and income, set budgets, and manage your personal finances efficiently.',
+    imageSrc: petImg,
+    link: 'https://github.com/Shrijanaa1/PersonalExpenseTracker'
+  },
+  {
+    id: 2,
+    name: 'Sentiment Analysis Web App',
+    description: 'Analyze tweets about Airlines Reviews and classify them as positive, negative, or neutral using machine learning.',
+    imageSrc: saImg,
+    link: 'https://github.com/Shrijanaa1/Sentiment-Analysis-Web-App'
+  },
+  {
+    id: 3,
+    name: 'Customer Reach',
+    description: 'A system to analyze and enhance customer reach and engagement for businesses.',
+    imageSrc: customerReachImg,
+    link: 'https://github.com/Shrijanaa1/CustomerReach'
+  },
+  {
+    id: 4,
+    name: 'Hospital Management System',
+    description: 'A comprehensive system to manage hospital operations including patient records, appointments, and staff management.',
+    imageSrc: hmsImg,
+    link: 'https://github.com/Shrijanaa1/Hospital-Management-System'
+  }
+];
+</script>
+
 <template>
   <section id="my-projects">
     <h2 class="section-title">Projects</h2>
     <div class="projects-container">
       <div v-for="project in projects" :key="project.id" class="project-card">
-        <img :src="getImage(project.image)" alt="Project Image" class="project-img">
+        <img :src="project.imageSrc" alt="Project Image" class="project-img">
         <div class="project-info">
           <h3 class="project-name">{{ project.name }}</h3>
           <p>{{ project.description }}</p>
@@ -13,56 +51,6 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  name: 'MyProjects',
-  data() {
-    return {
-      projects: [
-        {
-          id: 1,
-          name: 'Personal Expense Tracker',
-          description: 'Track your expenses and income, set budgets, and manage your personal finances efficiently.',
-          image: 'pet.png',
-          link: 'https://github.com/Shrijanaa1/PersonalExpenseTracker'
-        },
-        {
-          id: 2,
-          name: 'Sentiment Analysis Web App',
-          description: 'Analyze tweets about Airlines Reviews and classify them as positive, negative, or neutral using machine learning.',
-          image: 'sa.png',
-          link: 'https://github.com/Shrijanaa1/Sentiment-Analysis-Web-App'
-        },
-        {
-          id: 3,
-          name: 'Customer Reach',
-          description: 'A system to analyze and enhance customer reach and engagement for businesses.',
-          image: 'img.png',
-          link: 'https://github.com/Shrijanaa1/CustomerReach'
-        },
-        {
-          id: 4,
-          name: 'Hospital Management System',
-          description: 'A comprehensive system to manage hospital operations including patient records, appointments, and staff management.',
-          image: 'hms.jpeg',
-          link: 'https://github.com/Shrijanaa1/Hospital-Management-System'
-        }
-      ]
-    }
-  },
-  methods: {
-    getImage(imageName) {
-      try {
-        return require(`@/assets/${imageName}`);
-      } catch (error) {
-        console.error("Image not found:", error);
-        return '';
-      }
-    }
-  }
-}
-</script>
 
 <style scoped>
 #my-projects {
