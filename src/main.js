@@ -3,10 +3,14 @@ import App from './App.vue'
 import router from './router'
 
 import PrimeVue from 'primevue/config';
+import 'primeicons/primeicons.css';
 import Menubar from 'primevue/menubar';
 import Button from 'primevue/button';
 import Tag from 'primevue/tag'
 import Card from 'primevue/card'
+
+// FontAwesome imports
+import '@fortawesome/fontawesome-free/css/all.css';
 
 import Aura from '@primevue/themes/aura';
 

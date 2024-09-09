@@ -20,7 +20,3 @@
 // Import external CSS file
 import '@/assets/styles/home.css';
 </script>
-
-<style scoped>
-
-</style>
