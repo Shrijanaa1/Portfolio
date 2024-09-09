@@ -8,28 +8,28 @@ const projects = [
   {
     id: 1,
     name: 'Personal Expense Tracker',
-    description: 'Track your expenses and income, set budgets, and manage your personal finances efficiently.',
+    description: 'A web application built using Java EE, JSF, and PrimeFaces to track your expenses and income based on categories, set budgets, and manage your personal finances efficiently.',
     imageSrc: petImg,
     link: 'https://github.com/Shrijanaa1/PersonalExpenseTracker'
   },
   {
     id: 2,
     name: 'Sentiment Analysis Web App',
-    description: 'Analyze tweets about Airlines Reviews and classify them as positive, negative, or neutral using machine learning.',
+    description: 'A machine learning-based web app developed using Python libraries, including Scikit-learn, and using Support Vector Machine (SVM) classifier to analyze tweets about Airlines Reviews and classify them as positive, negative, or neutral.',
     imageSrc: saImg,
     link: 'https://github.com/Shrijanaa1/Sentiment-Analysis-Web-App'
   },
   {
     id: 3,
     name: 'Customer Reach',
-    description: 'A system to analyze and enhance customer reach and engagement for businesses.',
+    description: 'A system built using Java, Spring Boot, and Angular to maintain and manage customer contact details, with features like security to ensure data protection and proper management of user interactions.',
     imageSrc: customerReachImg,
     link: 'https://github.com/Shrijanaa1/CustomerReach'
   },
   {
     id: 4,
     name: 'Hospital Management System',
-    description: 'A comprehensive system to manage hospital operations including patient records, appointments, and staff management.',
+    description: 'A console-based system developed using Java, which provides functionalities like adding patients, viewing patients and doctors, booking appointments, and managing operations through a simple menu interface.',
     imageSrc: hmsImg,
     link: 'https://github.com/Shrijanaa1/Hospital-Management-System'
   }
@@ -59,7 +59,7 @@ const projects = [
 }
 
 h2.section-title {
-  font-size: 28px;
+  font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
   color: #2c3e50;
@@ -68,7 +68,7 @@ h2.section-title {
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 2rem;
   justify-content: center;
 }
 
@@ -97,12 +97,12 @@ h2.section-title {
 
 .project-info h3.project-name {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #2c3e50;
 }
 
 .project-info p {
-  font-size: 16px;
+  font-size: 1.1rem;
   color: #666;
 }
 
