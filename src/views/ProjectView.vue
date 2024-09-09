@@ -74,7 +74,7 @@ h2.section-title {
   font-size: 28px;
   margin-bottom: 20px;
   text-align: center;
-  color: #2c3e50; /* Updated color for better visibility */
+  color: #2c3e50;
 }
 
 .projects-container {
@@ -110,7 +110,7 @@ h2.section-title {
 .project-info h3.project-name {
   margin: 0;
   font-size: 20px;
-  color: #2c3e50; /* Ensure name is visible */
+  color: #2c3e50;
 }
 
 .project-info p {

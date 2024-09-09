@@ -22,11 +22,21 @@
           <i class="pi pi-star icon"></i> Skills
         </h2>
         <div class="skills-wrapper p-d-flex p-flex-wrap">
-          <Tag v-for="skill in skills" :key="skill" :value="skill" severity="info" class="skill-tag" />
+          <div class="skills-column">
+            <div v-for="skill in column1Skills" :key="skill.name" class="skill-item">
+              <i :class="skill.icon" class="skill-icon"></i>
+              <Tag :value="skill.name" severity="info" class="skill-tag" />
+            </div>
+          </div>
+          <div class="skills-column">
+            <div v-for="skill in column2Skills" :key="skill.name" class="skill-item">
+              <i :class="skill.icon" class="skill-icon"></i>
+              <Tag :value="skill.name" severity="info" class="skill-tag" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <!-- Contact Section -->
     <section class="contact">
       <h2>
@@ -48,10 +58,25 @@
 </template>
 
 <script setup>
-const skills = ['Java', 'Spring', 'JSF', 'PrimeFaces', 'Vue.js', 'CSS3', 'HTML5', 'MySQL'];
+
+// const skills = ['Java', 'Spring', 'JSF', 'PrimeFaces', 'Vue.js', 'CSS', 'HTML', 'MySQL'];
+
+const column1Skills = [
+  { name: 'Java', icon: 'pi pi-database' },
+  { name: 'Spring', icon: 'pi pi-database' },
+  { name: 'JSF', icon: 'pi pi-database' },
+  { name: 'PrimeFaces', icon: 'pi pi-database' },
+];
+
+const column2Skills = [
+  { name: 'Vue.js', icon: 'pi pi-database' },
+  { name: 'CSS3', icon: 'pi pi-database' },
+  { name: 'HTML5', icon: 'pi pi-database' },
+  { name: 'MySQL', icon: 'pi pi-database' },
+];
 
 const educations = [
-  { degree: "Bachelor of Science in Computer Science and Information Technology",
+  { degree: "BS in Computer Science and Information Technology",
     institution: "St.Xavier's College, Maitighar",
     period: "2018 - 2023" },
   { degree: "Science(High School)", institution: "Grammar College, Koteshwor",
@@ -87,7 +112,7 @@ const educations = [
 }
 
 .education h2, .skills h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #34495e;
   margin-bottom: 20px;
   display: flex;
@@ -100,26 +125,42 @@ const educations = [
 }
 
 .education-details h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #2c3e50;
 }
 
 .education-details p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #7f8c8d;
 }
 
 .skills-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.skills-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .skill-tag {
-  margin: 5px;
+  margin-left: 10px;
   font-size: 1rem;
   background-color: #3498db;
   color: white;
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+  color: #3498db;
 }
 
 .contact {
@@ -127,7 +168,7 @@ const educations = [
 }
 
 .contact h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #34495e;
   text-align: center;
   margin-bottom: 20px;
@@ -151,7 +192,8 @@ const educations = [
   align-items: center;
 }
 
-.contact-link i {
+.contact-icon {
+  font-size: 2.5rem;
   margin-right: 10px;
 }
 

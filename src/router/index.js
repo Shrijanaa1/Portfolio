@@ -5,7 +5,7 @@ import ProjectView from "@/views/ProjectView.vue";
 import ExperienceView from "@/views/ExperienceView.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL), //CreateWebHistory: Enable HTML5 History Mode, for clean URL(without # symbol in the URl)
   routes: [
     {
       path: '/',
