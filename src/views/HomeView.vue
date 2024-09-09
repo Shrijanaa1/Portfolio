@@ -14,9 +14,16 @@
 
     </section>
   </div>
+
+  <AboutView />
+  <ExperienceView />
+  <ProjectView />
 </template>
 
 <script setup>
 // Import external CSS file
 import '@/assets/styles/home.css';
+import AboutView from "@/views/AboutView.vue";
+import ExperienceView from "@/views/ExperienceView.vue";
+import ProjectView from "@/views/ProjectView.vue";
 </script>
