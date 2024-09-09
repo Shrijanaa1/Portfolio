@@ -1,11 +1,11 @@
 <template>
   <div class="portfolio">
-    <div class="content-wrapper p-d-flex p-flex-wrap p-justify-center">
+    <div class="content-wrapper">
 
       <!-- Education Section -->
-      <div class="education p-mr-3">
+      <div class="education">
         <h2>
-          <i class="pi pi-graduation-cap icon"></i> Education
+           Education
         </h2>
         <div class="education-details">
           <div v-for="education in educations" :key="education.period">
@@ -18,11 +18,11 @@
       </div>
 
       <!-- Skills Section -->
-      <div class="skills p-ml-3">
+      <div class="skills">
         <h2>
-          <i class="pi pi-star icon"></i> Skills
+           Skills
         </h2>
-        <div class="skills-wrapper p-d-flex p-flex-wrap">
+        <div class="skills-wrapper">
           <div class="skills-column">
             <div v-for="skill in column1Skills" :key="skill.name" class="skill-item">
               <i :class="skill.icon" class="skill-icon"></i>

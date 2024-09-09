@@ -22,7 +22,8 @@ const experiences = [
     endDate: "July, 2024",
     experiences: [
       "Learned about Java, Spring and SpringBoot Framework and Angular.",
-      "Developed minor projects including CRUD operations."
+      "Learned about version control using Git and GitHub.",
+      "Developed minor projects including CRUD operations and RESTful services."
     ],
     imageSrc: f1softImg
   }
@@ -55,7 +56,7 @@ const experiences = [
   color: #333;
 }
 .experience h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   //margin-bottom: 1rem;
   text-align: center;
 }
@@ -88,16 +89,18 @@ const experiences = [
 }
 .experience-details h4 {
   margin: 0.5rem 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .experience-details p {
   margin: 0.5rem 0;
+  font-size: 1rem;
 }
 .experience-details ul {
-  padding: 0;
-  list-style: none;
+  padding-left: 20px;
+
 }
 .experience-details li {
   margin: 0.5rem 0;
+  font-size: 1.1rem;
 }
 </style>
