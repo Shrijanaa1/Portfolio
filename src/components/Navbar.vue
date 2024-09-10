@@ -19,7 +19,11 @@ const items = [
 
 <style scoped>
 .menubar {
-  margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the navbar stays on top */
   font-size: 1rem;
 }
 </style>

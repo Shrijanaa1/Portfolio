@@ -104,4 +104,14 @@ const experiences = [
   margin: 0.5rem 0;
   font-size: 1.1rem;
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .experience-card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+
+
 </style>

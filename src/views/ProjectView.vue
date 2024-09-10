@@ -3,7 +3,6 @@
     <h2 class="section-title">Projects</h2>
     <div class="projects-container">
 
-
       <div v-for="project in projects" :key="project.id" class="project-card">
         <img :src="project.imageSrc" alt="Project Image" class="project-img">
         <div class="project-info">

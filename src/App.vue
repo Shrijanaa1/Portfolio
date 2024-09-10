@@ -17,5 +17,7 @@ import Navbar from '@/components/Navbar.vue';
 
 
 <style scoped>
-
+main {
+  padding-top: 3rem; /* Add some top padding to avoid content being hidden behind the navbar */
+}
 </style>
