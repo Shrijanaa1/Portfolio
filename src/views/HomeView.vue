@@ -90,9 +90,9 @@ p {
 .description-text {
   font-size: 1.3rem;
   color: #888;
-  max-width: 900px; /* Set a maximum width */
-  margin: 10px auto; /* Center the text block */
-  padding: 0 20px; /* Add padding for better spacing */
-  line-height: 1.6; /* Increase line height for better readability */
+  max-width: 900px;
+  margin: 10px auto;
+  padding: 0 20px;
+  line-height: 1.6;
 }
 </style>

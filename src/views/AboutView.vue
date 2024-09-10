@@ -19,19 +19,6 @@
         </template>
       </Card>
 
-<!--      <div class="education">-->
-<!--        <h2>-->
-<!--           Education-->
-<!--        </h2>-->
-<!--        <div class="education-details">-->
-<!--          <div v-for="education in educations" :key="education.period">-->
-<!--            <h3>{{ education.degree }}</h3>-->
-<!--            <p>{{ education.institution }}-->
-<!--              <span class="education-period">{{ education.period }}</span>-->
-<!--            </p>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
 
       <!-- Skills Section -->
       <Card class="skills">
@@ -56,25 +43,6 @@
           </template>
       </Card>
 
-<!--      <div class="skills">-->
-<!--        <h2>-->
-<!--           Skills-->
-<!--        </h2>-->
-<!--        <div class="skills-wrapper">-->
-<!--          <div class="skills-column">-->
-<!--            <div v-for="skill in column1Skills" :key="skill.name" class="skill-item">-->
-<!--              <i :class="skill.icon" class="skill-icon"></i>-->
-<!--              <Tag :value="skill.name" severity="info" class="skill-tag" />-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="skills-column">-->
-<!--            <div v-for="skill in column2Skills" :key="skill.name" class="skill-item">-->
-<!--              <i :class="skill.icon" class="skill-icon"></i>-->
-<!--              <Tag :value="skill.name" severity="info" class="skill-tag" />-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
     </div>
 
   </div>

@@ -120,4 +120,52 @@ h2.section-title {
 .project-link:hover {
   text-decoration: underline;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(100% - 20px);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .project-info h3.project-name {
+    font-size: 1.25rem;
+  }
+
+  .project-info p {
+    font-size: 1rem;
+  }
+
+  .projects-container {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2.section-title {
+    font-size: 1.5rem;
+  }
+
+  .project-card {
+    padding: 10px;
+  }
+
+  .project-info {
+    padding: 10px;
+  }
+
+  .project-info h3.project-name {
+    font-size: 1.2rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+}
 </style>

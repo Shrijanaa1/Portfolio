@@ -55,6 +55,7 @@ const experiences = [
   background: #f5f5f5;
   color: #333;
 }
+
 .experience h2 {
   font-size: 2rem;
   //margin-bottom: 1rem;
