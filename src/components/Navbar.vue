@@ -1,3 +1,7 @@
+<template>
+  <Menubar :model="items" class="menubar"></Menubar>
+</template>
+
 <script setup>
 import { useRouter } from 'vue-router';
 import 'primeicons/primeicons.css';
@@ -12,10 +16,6 @@ const items = [
   { label: 'Contact', icon: 'pi pi-fw pi-phone', command: () => router.push('/contact') }
 ];
 </script>
-
-<template>
-  <Menubar :model="items" class="menubar"></Menubar>
-</template>
 
 <style scoped>
 .menubar {

@@ -1,3 +1,22 @@
+<template>
+  <section class="experience">
+    <h2>Work Experience</h2>
+    <div class="experience-container">
+      <div v-for="item in experiences" :key="item.role" class="experience-card">
+        <img :src="item.imageSrc" alt="Company Logo" class="company-logo" />
+        <div class="experience-details">
+          <h3>{{ item.role }}</h3>
+          <h4>{{ item.organisation }}</h4>
+          <p>{{ item.startDate }} – {{ item.endDate }}</p>
+          <ul>
+            <li v-for="exp in item.experiences" :key="exp">{{ exp }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
 <script setup>
 import synergyImg from '@/assets/synergy.png';
 import f1softImg from '@/assets/f1soft.png';
@@ -19,7 +38,7 @@ const experiences = [
     role: "Software Engineer Intern (Java)",
     organisation: "F1Soft Pvt. Ltd.",
     startDate: "April, 2023",
-    endDate: "July, 2024",
+    endDate: "July, 2023",
     experiences: [
       "Learned about Java, Spring and SpringBoot Framework and Angular.",
       "Learned about version control using Git and GitHub.",
@@ -29,25 +48,6 @@ const experiences = [
   }
 ];
 </script>
-
-<template>
-  <section class="experience">
-    <h2>Work Experience</h2>
-    <div class="experience-container">
-      <div v-for="item in experiences" :key="item.role" class="experience-card">
-        <img :src="item.imageSrc" alt="Company Logo" class="company-logo" />
-        <div class="experience-details">
-          <h3>{{ item.role }}</h3>
-          <h4>{{ item.organisation }}</h4>
-          <p>{{ item.startDate }} – {{ item.endDate }}</p>
-          <ul>
-            <li v-for="exp in item.experiences" :key="exp">{{ exp }}</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-</template>
 
 <style scoped>
 .experience {

@@ -1,3 +1,22 @@
+<template>
+  <section id="my-projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+
+
+      <div v-for="project in projects" :key="project.id" class="project-card">
+        <img :src="project.imageSrc" alt="Project Image" class="project-img">
+        <div class="project-info">
+          <h3 class="project-name">{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+          <a :href="project.link" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</template>
+
 <script setup>
 import petImg from '@/assets/pet.png';
 import saImg from '@/assets/sentiment.png';
@@ -35,22 +54,6 @@ const projects = [
   }
 ];
 </script>
-
-<template>
-  <section id="my-projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-container">
-      <div v-for="project in projects" :key="project.id" class="project-card">
-        <img :src="project.imageSrc" alt="Project Image" class="project-img">
-        <div class="project-info">
-          <h3 class="project-name">{{ project.name }}</h3>
-          <p>{{ project.description }}</p>
-          <a :href="project.link" target="_blank" class="project-link">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</template>
 
 <style scoped>
 #my-projects {
