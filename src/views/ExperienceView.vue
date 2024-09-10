@@ -25,7 +25,7 @@ const experiences = [
   {
     role: "Java Intern",
     organisation: "Synergy Tech Software",
-    startDate: "July, 2023",
+    startDate: "July, 2024",
     endDate: "Present",
     experiences: [
       "Developed a personal expense tracker application using Java EE and JSF, enhancing my skills in full-stack development.",
@@ -111,7 +111,5 @@ const experiences = [
     flex: 1 1 calc(50% - 2rem);
   }
 }
-
-
 
 </style>

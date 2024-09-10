@@ -3,7 +3,9 @@
     <h2 class="section-title">Projects</h2>
     <div class="projects-container">
 
-      <div v-for="project in projects" :key="project.id" class="project-card">
+      <div v-for="project in projects" :key="project.id" class="project-card"
+      @click="navigateToDetail(project.id)">
+
         <img :src="project.imageSrc" alt="Project Image" class="project-img">
         <div class="project-info">
           <h3 class="project-name">{{ project.name }}</h3>
@@ -21,6 +23,14 @@ import petImg from '@/assets/pet.png';
 import saImg from '@/assets/sentiment.png';
 import customerReachImg from '@/assets/cms.jpeg';
 import hmsImg from '@/assets/hms.jpeg';
+
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const navigateToDetail = (projectId) => {
+  router.push({ name: 'ProjectDetail', params: { id: projectId } });
+};
 
 const projects = [
   {
