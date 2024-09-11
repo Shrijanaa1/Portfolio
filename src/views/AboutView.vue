@@ -80,6 +80,7 @@ const educations = [
 </script>
 
 <style scoped>
+
 .portfolio {
   padding: 50px 20px;
   background-color: #f0f0f5;

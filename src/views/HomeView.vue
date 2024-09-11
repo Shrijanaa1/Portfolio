@@ -36,7 +36,7 @@ import ContactView from "@/views/ContactView.vue";
   text-align: center;
   padding: 20px;
   background-color: #f5f5f5;
-  height: 90vh;
+  height: 100vh;
 }
 
 .intro {
