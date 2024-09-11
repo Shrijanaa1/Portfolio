@@ -4,13 +4,13 @@
     <div class="projects-container">
 
       <div v-for="project in projects" :key="project.id" class="project-card"
-      @click="navigateToDetail(project.id)">
+      @click="navigateToDetail(project.id)">    <!-- Event listener to trigger the function -->
 
         <img :src="project.imageSrc" alt="Project Image" class="project-img">
         <div class="project-info">
           <h3 class="project-name">{{ project.name }}</h3>
-          <p>{{ project.description }}</p>
-          <a :href="project.link" target="_blank" class="project-link">View on GitHub</a>
+         <p>{{ project.description }}</p>      <!-- Dynamic binding -->
+          <a :href="project.link" target="_blank" class="project-link">View Source Code GitHub</a>
         </div>
       </div>
 
@@ -26,7 +26,7 @@ import hmsImg from '@/assets/hms.jpeg';
 
 import { useRouter } from "vue-router";
 
-const router = useRouter();
+const router = useRouter(); //useRouter() hook for navigation
 
 const navigateToDetail = (projectId) => {
   router.push({ name: 'ProjectDetail', params: { id: projectId } });
@@ -65,9 +65,11 @@ const projects = [
 </script>
 
 <style scoped>
+
 #my-projects {
   padding: 20px;
   background-color: #f0f0f5;
+  //height: 100vh;
 }
 
 h2.section-title {
@@ -121,7 +123,7 @@ h2.section-title {
 .project-link {
   margin-top: 10px;
   font-size: 16px;
-  color: #007bff;
+  color: #3498db;
   text-decoration: none;
   display: inline-block;
 }

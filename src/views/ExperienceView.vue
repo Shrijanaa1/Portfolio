@@ -54,6 +54,7 @@ const experiences = [
   padding: 2rem;
   background: #f5f5f5;
   color: #333;
+  //height: 80vh;
 }
 
 .experience h2 {

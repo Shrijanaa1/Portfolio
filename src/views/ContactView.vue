@@ -68,6 +68,7 @@ const handleSubmit = () => {
 
 .contact {
   margin-top: 0;
+  //height: 100vh;
 }
 
 .contact h2 {
@@ -89,6 +90,7 @@ const handleSubmit = () => {
 .contact-link i {
   font-size: 3rem;
   gap: 25px;
+  color: #3498db;
 }
 
 
@@ -125,7 +127,8 @@ const handleSubmit = () => {
   border: none;
   border-radius: 4px;
   font-size: 1rem;
-  color: #333;
+  color: black;
+  background-color: whitesmoke;
 }
 
 .form-group input:focus,

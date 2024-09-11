@@ -1,10 +1,19 @@
 <template>
   <Menubar :model="items" class="menubar"></Menubar>
+
+  <!--  <template #end>-->
+<!--    <div style="margin-top: 40px;">-->
+<!--      <Button icon="fa fa-palette" class="p-button-outlined switch-theme-button" @click="switchTheme">Switch Theme</Button>-->
+<!--    </div>-->
+<!--  </template>-->
 </template>
 
 <script setup>
 import { useRouter } from 'vue-router';
 import 'primeicons/primeicons.css';
+import { inject } from 'vue';  // Injects the provided value
+import Aura from "@primevue/themes/aura";
+import Lara from "@primevue/themes/lara";
 
 const router = useRouter();
 
@@ -15,6 +24,19 @@ const items = [
   { label: 'Projects', icon: 'pi pi-fw pi-folder', command: () => router.push('/projects') },
   { label: 'Contact', icon: 'pi pi-fw pi-phone', command: () => router.push('/contact') }
 ];
+
+
+// Inject the reactive currentTheme provided by the main app
+const currentTheme = inject('currentTheme');
+
+// Function to switch theme
+const switchTheme = () => {
+  currentTheme.theme = currentTheme.theme === Aura ? Lara : Aura; // Toggle between themes
+
+  // Update PrimeVue theme configuration dynamically by setting it in the document
+  document.documentElement.setAttribute('data-theme', currentTheme.value);
+};
+
 </script>
 
 <style scoped>
@@ -26,4 +48,9 @@ const items = [
   z-index: 1000; /* Ensures the navbar stays on top */
   font-size: 1rem;
 }
+
+.switch-theme-button {
+  margin-left: auto;
+}
+
 </style>

@@ -86,6 +86,7 @@ const educations = [
   display: flex;
   flex-direction: column;
   align-items: center;
+  //height: 70vh;
 }
 
 .content-wrapper {
