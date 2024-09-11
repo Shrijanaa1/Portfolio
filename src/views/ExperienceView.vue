@@ -113,4 +113,21 @@ const experiences = [
   }
 }
 
+@media (max-width: 768px) {
+  .experience-card {
+    flex: 1 1 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .company-logo {
+    margin-bottom: 1rem;
+  }
+
+  .experience-details ul {
+    padding-left: 0;
+    list-style: none;
+  }
+}
+
 </style>
