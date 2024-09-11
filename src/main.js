@@ -17,9 +17,9 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import Aura from '@primevue/themes/aura';
 import Lara from '@primevue/themes/lara';
 
-const app = createApp(App)
+const app = createApp(App) //initialize Vue app
 
-app.use(router)
+app.use(router) //register router
 
 // Initialize the theme as a reactive ref
 const currentTheme = ref(Aura);

@@ -61,10 +61,12 @@ const projects = [
   }
 ];
 
-const route = useRoute();  //Access current
-const projectId = route.params.id;
+const route = useRoute();  //Access current route details
+const projectId = route.params.id; //Extract id of the project from route parameters
 
+//computed() computes a value based on its dependencies(Here it filters projects array by projectId)
 const project = computed(() => projects.find(p => p.id === parseInt(projectId)));
+
 </script>
 
 <style scoped>
