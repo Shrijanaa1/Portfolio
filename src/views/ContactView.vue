@@ -155,5 +155,36 @@ button:hover {
   background-color: #2980b9;
 }
 
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 1rem;
+    width: 95%;
+  }
 
+  .contact-links {
+    gap: 1rem;
+  }
+
+  .contact-link i {
+    font-size: 1.8rem;
+  }
+
+  .contact h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-size: 0.8rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
+}
 </style>
