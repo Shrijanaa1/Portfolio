@@ -1,7 +1,6 @@
 import { createApp, ref } from 'vue'
 import App from './App.vue'
 import router from './router'
-// import '@/assets/styles/global.css'; // Import global CSS
 
 import PrimeVue from 'primevue/config';
 import 'primeicons/primeicons.css';
@@ -15,7 +14,6 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 //PrimeVue themes
 import Aura from '@primevue/themes/aura';
-import Lara from '@primevue/themes/lara';
 
 const app = createApp(App) //initialize Vue app
 
@@ -33,13 +31,6 @@ app.use(PrimeVue, {
 
 // Provide the current theme globally
 app.provide('currentTheme', currentTheme);
-
-// Use PrimeVue with the Aura theme preset
-// app.use(PrimeVue, {
-//     theme: {
-//         preset: Aura
-//     }
-// })
 
 // Register PrimeVue components globally
 app.component('Menubar', Menubar)

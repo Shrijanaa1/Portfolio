@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <section class="intro">
-      <img src="@/assets/img.png" alt="Shrijana Karki" class="profile-image" />
+      <img src="@/assets/img.jpg" alt="Shrijana Karki" class="profile-image" />
 
       <h1>Shrijana Karki</h1>
       <p>Java Developer | Computer Science UnderGraduate</p>
@@ -23,8 +23,6 @@
 </template>
 
 <script setup>
-// Import external CSS file
-// import '@/assets/styles/home.css';
 import AboutView from "@/views/AboutView.vue";
 import ExperienceView from "@/views/ExperienceView.vue";
 import ProjectView from "@/views/ProjectView.vue";
